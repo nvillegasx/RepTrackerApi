@@ -131,11 +131,15 @@ app.get('/workouts', (req, res) => {
     // req.body will contain which one they want
 
 });
-
-// add a workout
-app.post('/workout', (req, res) => {
+// ******** works *********
+// add an exercise
+app.post('/exercise', (req, res) => {
     // req.body will contain workout they want to add
     console.log(req.body);
+
+    //save exercise to database
+
+
     res.send("adding workout");
 
 });
